@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4 mt-4">MIS Invoice System</h1>
+</div>
+
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Invoices List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Home" asp-action="Create" class="btn btn-primary"> <i class="bi bi-plus-circle"></i> &nbsp; New Invoice</a>
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped bg-light" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                Invoice Number
+            </th>
+            <th>
+                Owner
+            </th>
+            <th>
+                Status
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+       
+        <tr>
+            <td>
+                <strong>911032</strong>
+            </td>
+            <td>Foday Sanyang</td>
+            <td>Unprocessed <i class="bi bi-check-circle fs-5 "></td>
+            <td class="text-end">
+                <a class="btn btn-sm btn-outline-primary">View</a>
+                <a class="btn btn-sm btn-outline-secondary">Edit</a>
+                <a class="btn btn-sm btn-outline-danger">Delete</a>
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <strong>822033</strong>
+            </td>
+            <td>Lamin A.M Ceesay</td>
+            <td>Processed <i class="bi bi-check-circle fs-5 text-success"></i></td>
+            <td class="text-end">
+                <a class="btn btn-sm btn-outline-primary">View</a>
+                <a class="btn btn-sm btn-outline-secondary">Edit</a>
+                <a class="btn btn-sm btn-outline-danger">Delete</a>
+            </td>
+        </tr>
+       
+      
+
+    </tbody>
+</table>
+
+
